@@ -1,0 +1,140 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+#formed {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#inputValue {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: gold;
+}
+
+.todo-listE {
+  width: 100%;
+  max-width: 500px;
+}
+
+.main_todo_div {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  background-color: #1c1c1c;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.main_todo_div li {
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.checkTodo {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.dltBtn {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dltBtn:hover {
+  background-color: gold;
+}
+
+/* Default is dark mode */
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+body.light {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+body.light input,
+body.light .btn,
+body.light .dltBtn {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+body.light .main_todo_div {
+  background-color: #fff;
+  color: black;
+}
+
+.themeToggleBtn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#f{
+    margin-top: auto;
+    margin-left:auto;
+}
